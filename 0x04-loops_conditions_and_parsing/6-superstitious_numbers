@@ -6,7 +6,7 @@
 
 loop=1
 
-while [ $loop -lt 21 ]
+while [ $loop -lt 20 ]
 do
     echo $loop
     if [ $loop -eq 4 ]
