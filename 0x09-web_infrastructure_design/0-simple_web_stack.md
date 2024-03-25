@@ -14,7 +14,7 @@ Elements in [0-simple_web_stack](0-simple_web_stack]:
    server IP 8.8.8.8
 
 About the infrastructure:
-*1. What is a server?*
+_1. What is a server?_
   - A computer device or program that offers a service or functionality to other
   devices or programs or devices, which are known as clients in using a network.
 
