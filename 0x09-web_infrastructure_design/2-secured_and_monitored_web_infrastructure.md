@@ -3,9 +3,9 @@
 This diagram represents a design for three server web infrastructure that hosts
 the website www.foobar.com. It is secured, serves encrypted traffic and is
 monitered. found at this URL:
-* [2-secured_and_monitored_web_infrastructure](2-secured_and_monitored_web_infrastructure)
+* [2-secured_and_monitored_web_infrastructure](2-secured_and_monitored_web_infrastructure.png)
 
-Elements in [2-secured_and_monitored_web_infrastructure](2-secured_and_monitored_web_infrastructure):
+Elements in [2-secured_and_monitored_web_infrastructure](2-secured_and_monitored_web_infrastructure.png):
  * 3 firewalls
  * 1 SSL certificate to serve www.foobar.com over HTTPS
  * 3 monitoring clients (data collector for Sumologic or other monitoring

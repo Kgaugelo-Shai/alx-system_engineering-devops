@@ -2,9 +2,9 @@
 
 This diagram represents a design for a one server web infrastucture that hosts a
 website that is reachable via www.foobar.com, found at this URL:
-* [0-simple_web_stack](0-simple_web_stack)
+* [0-simple_web_stack](0-simple_web_stack.png)
 
-Elements in [0-simple_web_stack](0-simple_web_stack]:
+Elements in [0-simple_web_stack](0-simple_web_stack.png):
  * 1 server
  * 1 web server (Nginx)
  * 1 application server

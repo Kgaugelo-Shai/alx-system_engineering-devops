@@ -2,9 +2,9 @@
 
 This diagram represents a design for three server web infrastructure that hosts
 the website www.foobar.com, found at this URL:
-* [1-distributed_web_infrastructure](1-distributed_web_infrastructure)
+* [1-distributed_web_infrastructure](1-distributed_web_infrastructure.png)
 
-Elements in [1-distributed_web_infrastructure](1-distributed_web_infrastructure):
+Elements in [1-distributed_web_infrastructure](1-distributed_web_infrastructure.png):
  * 2 servers
  * 1 web server (Nginx)
  * 1 application server
