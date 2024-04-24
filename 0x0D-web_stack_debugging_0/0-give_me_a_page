@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 #Script turns on an Apache Server that is connected to
+docker exec -it 6fec071f0baf /bin/bash/
 sudo service apache2 start
 
