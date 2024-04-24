@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #Script turns on an Apache Server that is connected to
-service apache2 start
+sudo service apache2 start
 
