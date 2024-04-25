@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 #Script turns on an Apache Server that is connected to
-echo "ServerName localhost" >> /etc/apache2.conf
+docker exec -it 817b3ec8a373 /bin/bash
 service apache2 start
 
