@@ -1,9 +1,9 @@
-#!/usr/bin/env bash
-# installs nginx on current ubuntu server
+nstall nginx on web-01
 
-sudo apt-get update -y
-sudo apt-get upgrade -y
-sudo apt-get install -y nginx
-echo "Hello World!" | sudo tee /var/www/html/index.nginx-debian.html
+sudo apt-get update
+sudo apt-get -y install nginx
 sudo ufw allow 'Nginx HTTP'
+
+echo "Hello World!" | sudo tee /var/www/html/index.html
+sudo nginx -t 
 sudo service nginx start
