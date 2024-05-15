@@ -13,4 +13,4 @@ replacement_string="server_ name _;\n\trewrite ^\/redirect_me https:\/\/github.c
 sudo sed -i "s/server_name _;/$replacement_string/" /etc/nginx/sites-enabled/default
 # restart nginx
 sudo nginx -t
-sudo service nginx start
+sudo service nginx restart
