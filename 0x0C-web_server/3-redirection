@@ -10,7 +10,6 @@ echo "Hello World!" | sudo tee /var/www/html/index.html
 # create replacement string
 replacement_string="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/kgaugelo-shai permanent;"
 # sed command with path to redirect page
-sudo sed -i "s/server_name _;/$replacement_string" /etc/nginx/sites-enabled/default
+sudo sed -i "s/server_name _;/$replacement_string/" /etc/nginx/sites-enabled/default
 # restart nginx
-sudo nginx -t
 sudo service nginx start
