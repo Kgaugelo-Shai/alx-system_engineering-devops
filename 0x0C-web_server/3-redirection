@@ -1,9 +1,14 @@
 #!/usr/bin/env bash
-# installs nginx on ubuntu server
+# 301 permanently moved execution
 
+sudo apt-get update
+# install nginx
 sudo apt-get install -y nginx
-sudo ufw allow 'Nginx HTTP'
-echo "Hello World!" | sudo tee /var/www/html/index.nginx-debian.html
-ln="\\\trewrite ^/redirect_me http://shaidevops.tech permanent;"
-sudo sed -i "26i $ln" /etc/nginx/sites-available/default
+# echo message and pipe it to create a script in index.html file
+echo "Hello World!" | sudo tee /var/www/html/index.html
+# create replacement string
+replacement_string="server_ name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/kgaugelo-shai permanent;"
+# sed command with path to redirect page
+sudo sed -i "s/server_name _;/$replacement_string/" /etc/nginx/sites-enabled/default
+# restart nginx
 sudo service nginx restart
