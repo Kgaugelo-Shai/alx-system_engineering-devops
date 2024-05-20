@@ -9,6 +9,7 @@ import sys
 
 
 if __name__ == "__main__":
+
     url = 'https://jsonplaceholder.typicode.com/'
 
     # get id
@@ -29,7 +30,7 @@ if __name__ == "__main__":
         if task['completed']:
             score += 1
     # print task list
-    print("{} is done with tasks({}/{}):".format(name, score, num_to_do))
+    print("Employee {} is done with tasks({}/{}):".format(name, score, num_to_do))
 
     # print name of task
     for task in to_do:
