@@ -45,5 +45,5 @@ if __name__ == "__main__":
     with open(CSVfile, "w", newline='') as fileCSV:
         write = csv.writer(fileCSV, delimiter=',', quoting=csv.QUOTE_ALL)
         for item in to_do:
-            write.writerow([userId, name, item.get('completed'),
-                            item.get('title')])
+            write.writerow([userId, user_info.get('username'),
+                            item.get('completed'), item.get('title')])
