@@ -3,9 +3,9 @@
    Script that returns information about an employees TO DO LIST progress,
    given their employee ID, using REST API
 """
-import sys
-import requests
 import json
+import requests
+import sys
 
 
 if __name__ == "__main__":
@@ -22,13 +22,15 @@ if __name__ == "__main__":
     to_do = requests.get(url + '/users/{}/todos'.format(userId)).json()
 
     score = 0
+    num_to_do = 0
 
     for task in to_do:
+        num_to_do += 1
         if task['completed']:
             score += 1
-
+            print(score)
     # print task list
-    print("{} is done with tasks({}/{}):".format(name, score, len(user_info)))
+    print("{} is done with tasks({}/{}):".format(name, score, num_to_do))
 
     # print name of task
     for task in to_do:
