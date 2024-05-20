@@ -28,7 +28,6 @@ if __name__ == "__main__":
         num_to_do += 1
         if task['completed']:
             score += 1
-            print(score)
     # print task list
     print("{} is done with tasks({}/{}):".format(name, score, num_to_do))
 
