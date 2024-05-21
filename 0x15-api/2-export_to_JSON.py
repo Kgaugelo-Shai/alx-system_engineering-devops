@@ -18,6 +18,7 @@ if __name__ == "__main__":
     user_info = requests.get(url + 'users/{}'.format(userId)).json()
     # turn into json string
     name = user_info.get('name')
+    username = user_info.get('username')
 
     # get task information
     to_do = requests.get(url + '/users/{}/todos'.format(userId)).json()
@@ -45,7 +46,7 @@ if __name__ == "__main__":
         task_info.append({
             "task": task.get('title'),
             "completed": task.get('completed'),
-            "username": task.get('username'),
+            "username": username,
             })
     user_dict[userId] = task_info
 
