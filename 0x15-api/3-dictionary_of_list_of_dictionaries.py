@@ -14,13 +14,13 @@ if __name__ == "__main__":
     url = 'https://jsonplaceholder.typicode.com/'
 
     users = requests.get(url + "users").json()
-    to_dos = requests.get(url+ "todos").json()
+    to_dos = requests.get(url + "todos").json()
     all_todos = {}
 
     for user in users:
         tasks = []
         for task in to_dos:
-            if task.get('userId') == task.get('id'):
+            if task.get('userId') == user.get('id'):
                 dict_task = {"username": user.get('username'),
                              "task": task.get('title'),
                              "completed": task.get('completed'),
