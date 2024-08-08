@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-# SSH configuration file to connect to server without password
-PasswordAuthentication no
-IdentityFile ~/.ssh/school
-
